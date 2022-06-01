@@ -1,0 +1,21 @@
+@media (min-width: 688px) and (max-width: 998px) {
+    .restaurants {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2%;
+        &__title{
+            padding-left: 1%;
+        }
+        &__bloc {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+    .card-restaurants {
+        box-sizing: border-box;
+        padding: 1%;
+        width: 50%;
+    }
+}

@@ -545,4 +545,74 @@ a {
   margin-bottom: 10px;
 }
 
+@media (min-width: 998px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+
+  .fonctionnement__bloc-button {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+  }
+
+  .fonctionnement-button {
+    width: 33%;
+    cursor: pointer;
+  }
+  .fonctionnement-button__chiffre {
+    right: 0;
+    left: 48%;
+    bottom: 40px;
+  }
+
+  .restaurants {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+  }
+  .restaurants__title {
+    padding-left: 1%;
+  }
+  .restaurants__bloc {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .card-restaurants {
+    padding: 1%;
+  }
+
+  .footer {
+    padding: 3% 0% 2% 4%;
+  }
+}
+@media (min-width: 688px) and (max-width: 998px) {
+  .restaurants {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+  }
+  .restaurants__title {
+    padding-left: 1%;
+  }
+  .restaurants__bloc {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .card-restaurants {
+    box-sizing: border-box;
+    padding: 1%;
+    width: 50%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

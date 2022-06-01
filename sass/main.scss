@@ -226,3 +226,6 @@ a {
         margin-bottom: 10px;
     }
 }
+
+@import "./responsive/desktop.scss";
+@import "./responsive/tablette.scss";
