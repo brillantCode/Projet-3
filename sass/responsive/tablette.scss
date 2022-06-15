@@ -1,10 +1,10 @@
-@media (min-width: 688px) and (max-width: 998px) {
+@media (min-width: 666px) and (max-width: 946px) {
     .restaurants {
         display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 2%;
-        &__title{
+        & h2 {
             padding-left: 1%;
         }
         &__bloc {
@@ -13,9 +13,46 @@
             width: 100%;
         }
     }
+    .fonctionnement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+    }
+    .fonctionnement__bloc-button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .fonctionnement-button {
+        width: 320px;
+        cursor: pointer;
+        &__chiffre {
+            right: 0;
+            left: 48%;
+            bottom: 40px;
+        }
+    }
     .card-restaurants {
         box-sizing: border-box;
         padding: 1%;
         width: 50%;
+    }
+    .menu {
+        &__img {
+            height: 400px;
+        }
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &__link-and-icon {
+            justify-content: center;
+            align-self: center;
+        }
     }
 }

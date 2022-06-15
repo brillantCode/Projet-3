@@ -1,7 +1,4 @@
 @keyframes remplissage{
-    0%{
-    background-image: linear-gradient(175deg, transparent 100%);
-  }
     5%{
     background-image: linear-gradient(175deg, transparent 70%, #fc91de 1%, #a778e2 2%);
   }
@@ -63,3 +60,69 @@
     background-image: linear-gradient(175deg, #fc91de , #a778e2);
   }
 }
+
+@keyframes slidein {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideinafter {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideinlast {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes loader-background {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  99% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

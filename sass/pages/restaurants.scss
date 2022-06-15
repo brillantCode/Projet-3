@@ -1,0 +1,159 @@
+.menu {
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -30px;
+    background-color: #f6f6f6;
+    padding: 4%;
+    &__img {
+        object-fit: cover;
+        object-position: 50% 60%;
+        width: 100%;
+        height: 240px;
+    }
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    & h1 {
+        font-weight: bold;
+        font-family: 'Shrikhand', cursive;
+        font-size: 28px;
+    }
+    &__coeur {
+        border: none;
+        background-color: #f6f6f6;
+        &__icon {
+            font-size: 22px;
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+    }
+    &__coeur:focus &__coeur__icon {
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: remplissage 0.2s forwards;
+        -webkit-text-stroke-width: 0;
+    }
+    &__coeur__icon:hover {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke-width: 0;
+        background-image: linear-gradient(175deg, #fc91de, #a778e2);
+    }
+    &__plats {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2%;
+        & h2 {
+            text-transform: uppercase;
+        }
+        &__underline {
+            height: 3px;
+            background-color: #99e2d0;
+            width: 40px;
+            margin-bottom: 10px;
+        }
+    }
+    &__card {
+        display: flex;
+        width: 100%;
+        background-color: white;
+        cursor: pointer;
+        overflow: hidden;
+        box-shadow: 3px 3px 3px 3px #e5e5e5;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        animation: slidein 1s ease-in-out .5s;
+        &--after {
+            animation: slideinafter 1s ease-in-out .5s;
+        }
+        &--last {
+            animation: slideinlast 1s ease-in-out .5s;
+        }
+        &__description {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            align-items: flex-end;
+            padding: 16px;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            &__text {
+                width: 80%;
+                & h3 {
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                & p {
+                    color: rgb(53, 53, 53);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            &__price {
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                color: rgb(53, 53, 53);
+            }
+        }
+        &__icon {
+            transform: scaleX(0);
+        }
+        &:hover &__icon {
+            transform: scaleX(1);
+            transition: transform 600ms ease-in-out;
+            transform-origin: center right;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: #99e2d0;
+            border-radius: 0 15px 15px 0;
+        }
+        &:hover &__icon--rotate {
+            transform: rotate(360deg);
+            transition: transform 600ms ease-in-out;
+        }
+        &:hover &__description {
+            border-radius: 15px 0 0 15px;
+        }
+    }
+    &__button {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 50px;
+            border-radius: 25px;
+            color: white;
+            background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+            cursor: pointer;
+        }
+    }
+    &--background {
+        background-color: #f6f6f6;
+    }
+}

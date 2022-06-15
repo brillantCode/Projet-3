@@ -1,4 +1,4 @@
-@media (min-width: 998px) {
+@media (min-width: 947px) {
     .fonctionnement {
         display: flex;
         flex-direction: column;
@@ -24,7 +24,9 @@
         justify-content: center;
         flex-direction: column;
         padding: 2%;
-        &__title{
+        & h2 {
+            display: flex;
+            align-self: center;
             padding-left: 1%;
         }
         &__bloc {
@@ -36,7 +38,38 @@
     .card-restaurants {
         padding: 1%;
     }
+    .navbar {
+        padding-bottom: 25px;
+    }
+    .menu {
+        padding: 2%;
+        &__img {
+            height: 640px;
+        }
+        &__plats {
+            box-sizing: border-box;
+            padding: 1%;
+            width: 33%;
+            &--column {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        &__card__description__text__content {
+            font-size: 13px;
+        }
+        &__button__content {
+            width: 250px;
+        }
+    }
     .footer {
-        padding: 3% 0% 2% 4%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2%;
+        &__link-and-icon {
+            justify-content: center;
+            align-self: center;
+        }
     }
 }
